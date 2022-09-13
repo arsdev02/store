@@ -1,0 +1,204 @@
+.header__nav {
+    padding-top: 10px;
+}
+
+/*-------------------- - top nav - --------------------*/
+.header__top ul{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+}
+
+.header__top ul li a{
+    color: var(--white);
+    font-size: 12px;
+    transition: .3s;
+}
+
+.header__top ul li a:hover {
+    opacity: .7;
+}
+/*-------------------- - top nav - --------------------*/
+
+/*-------------------- - header info - --------------------*/
+.header__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+.header__info-contact {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.header__info-contact span {
+    color: var(--gray);
+    font-size: 14px;
+    transition: .3s;
+}
+
+.header__info-logo a {
+    transition: .3s;
+}
+
+
+.header__info-basket a {
+    transition: .3s;
+}
+.header__info-basket span {
+    color: var(--gray);
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+
+.header__info-contact span:hover, .header__info-logo a:hover, .header__info-basket a:hover{
+    opacity: .8;
+}
+/*-------------------- - header info - --------------------*/
+
+
+/*-------------------- - header product nav - --------------------*/
+.header__product-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 1px solid var(--border-gray);
+}
+
+
+.product-nav__left ul{
+    display: flex;
+    column-gap: 20px;
+}
+.product-nav__left ul li a {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.product-nav__left ul li {
+    position: relative;
+}
+
+.nav__left__sub-nav{
+    position: relative;
+}
+.nav__left__sub-nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    background-color: #fff;
+    padding: 15px;
+}
+.nav__left__sub-nav:before{
+    content: '';
+    position: absolute;
+    border: 20px solid transparent;
+    border-left: 20px solid #fff;
+    display: none;
+}
+.product-nav__left ul li:hover .nav__left__sub-nav:before{
+    display: block;
+}
+.product-nav__left ul li:hover .nav__left__sub-nav ul {
+    display: flex;
+}
+
+
+.product-nav__right {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 2px 0;
+
+}
+.product-nav__right a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-nav__right-search {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+    height: 100%;
+}
+.product-nav__right-search input {
+    width: 100%;
+    height: 45px;
+
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid var(--border-gray);
+    border-radius: 50px;
+    transition: .3s;
+    color: #333333;
+    position: relative;
+    left: 100%;
+}
+.product-nav__right-search:hover  .search-inp, .search-inp:focus, .search-inp:valid{
+    left: 0;
+}
+.product-nav__right-search button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+/*-------------------- - header product nav - --------------------*/
+
+/*-------------------- - header slide - --------------------*/
+.header__slide {
+    height: 440px;
+    background-image: url('../../images/header_slide.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header__slide-container {
+    height: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 50px;
+}
+.header__slide h2, .header__slide p{
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0,0,0,.3);
+}
+.header__slide-title{
+    position: relative;
+}
+.header__slide-title:after{
+    content: '';
+    width: 150px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+.header__slide a{
+    color: #fff;
+}
+.header__slide-title, .header__slide-sub-title {
+
+
+}
+/*-------------------- - header slide - --------------------*/
+
+
+
